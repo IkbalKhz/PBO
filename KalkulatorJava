@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class KalkulatorJava {
+    
+    public static void main(String args[]){
+        
+         Scanner input = new Scanner(System.in);
+         int bil1, bil2, pil, hasil;
+         System.out.println("PROGRAM JAVA KALKULATOR SEDERHANA");
+         System.out.print("Bilangan pertama : ");
+         bil1=input.nextInt();
+         System.out.print("Bilangan kedua : ");
+         bil2=input.nextInt();
+         System.out.println("1. Perkalian");
+         System.out.println("2. Pembagian");
+         System.out.println("3. Penjumlahan");
+         System.out.println("4. Pengurangan");
+         System.out.println("--------------------------------");
+         
+         System.out.println("Masukkan pilihan [1/2/3/4]: ");
+         pil=input.nextInt();
+         
+         // Logika
+         if (pil == 1){
+             hasil = bil1 * bil2;
+            System.out.println("Hasil perkalian bil1 * bil2 = " + hasil);
+        
+         }else if (pil == 2){
+             hasil = bil1 / bil2;
+            System.out.println("Hasil pembagian bil1 / bil2 = " + hasil);
+         
+         }else if (pil == 3){
+             hasil = bil1 + bil2;
+            System.out.println("Hasil pembagian bil1 + bil2 = " + hasil);
+            
+         }else if (pil == 4){
+             hasil = bil1 - bil2;
+            System.out.println("Hasil pembagian bil1 - bil2 = " + hasil);
+        
+         } 
+    }
+}
