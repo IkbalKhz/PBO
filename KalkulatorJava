@@ -35,6 +35,8 @@ public class KalkulatorJava {
          }else if (pil == 4){
              hasil = bil1 - bil2;
             System.out.println("Hasil pembagian bil1 - bil2 = " + hasil);
+         else{
+            System.out.println("kode operator yang anda masukan salah");
         
          } 
     }
