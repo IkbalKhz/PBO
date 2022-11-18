@@ -7,12 +7,12 @@ public class ATM{
   int saldo = 50000;
   Scanner input = new Scanner (System.in);
   while (true) {
-   System.out.println("            MENU ATM         ");
+   System.out.println("========== MENU ATM ==========");
    System.out.println("1. LIHAT SALDO  -----------");
    System.out.println("2. MENABUNG     -----------");
    System.out.println("3. MENGAMBIL    -----------");
    System.out.println("4. KELUAR       -----------");
-   System.out.println("=========== ######## ==========");
+   System.out.println("==============================");
    System.out.print("Masukkan Pilihan Anda : ");
    pilihan = Integer.parseInt(input.next());
    
@@ -46,7 +46,7 @@ public class ATM{
      break;
    
    default:
-     System.out.println("Anda Harus memilih menu (1,2,3,4)");
+     System.out.println("Anda Harus memilih menu (1/2/3/4)");
      break;
    }
   }
