@@ -1,0 +1,46 @@
+package tutorial;
+
+import java.util.Scanner;
+
+public class LuasPLS {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Nama = ikbal bazar");
+        System.out.println("Nim = D0221405");
+        System.out.println("");
+        while(true){
+        System.out.println("1. persegi");
+        System.out.println("2. lingkaran");
+        System.out.println("3. segitiga");
+        int pilihan;
+        System.out.println("Masukkan pilihan anda : ");
+        pilihan = input.nextInt();
+  
+        if(pilihan == 1){
+            int luas, sisi;
+            System.out.println("Masukan panjang sisi persegi : ");
+            sisi = input.nextInt();
+            luas = sisi * sisi;
+            System.out.println("Luas persegi : "+luas);
+        }else if(pilihan == 2){
+            double r, luas;
+            System.out.println("Masukan Jari - Jari lingkaran : ");
+            r = input.nextDouble();
+            luas = 22/7 * r * r;
+            System.out.println("Luas Lingkaran : "+luas);
+        }else if(pilihan == 3){
+            int alas, tinggi;
+            double luas;
+            System.out.println("Masukan Alas : ");
+            alas = input.nextInt();
+            System.out.println("Masukan Tinggi : ");
+            tinggi = input.nextInt();
+            luas = 0.5 * alas * tinggi;
+            System.out.println("Luas Segitiga : "+luas);        
+        }else{
+            System.out.println("masukkan anda salah");
+        }  
+    }
+  }
+}
+
